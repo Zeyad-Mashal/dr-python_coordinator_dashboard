@@ -1,0 +1,230 @@
+.lectures,
+.lectures_container,
+.lectures_list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.lectures_container {
+  margin-top: 4rem;
+}
+.lectures_container > button {
+  width: 80%;
+  background-color: #fff;
+  border: 2px solid #aaa;
+  box-shadow: 4px 4px 10px #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  font-weight: 18px;
+  font-weight: bold;
+  margin: 1rem 0 1rem 0;
+}
+.lectures_list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+.lectures_item {
+  width: 45%;
+  padding: 1rem;
+  background-color: #fff;
+  border: 2px solid #aaa;
+  border-radius: 16px;
+  box-shadow: 4px 4px 10px #ccc;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.lectures_item > h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.lectures_item button {
+  border: 2px solid #aaa;
+  width: 100px;
+  outline: none;
+  border-radius: 10px;
+  padding: 5px 0;
+  transition: 0.3s ease;
+}
+.lectures_item button:hover {
+  border: 2px solid #222;
+  font-weight: bold;
+}
+.add_lecture,
+.delete_lecture {
+  width: 80%;
+  max-height: 90vh;
+  background-color: #fff;
+  border: 2px solid #aaa;
+  box-shadow: 4px 4px 10px #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  display: none;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  overflow: auto;
+}
+.delete_lecture {
+  width: 50%;
+  position: absolute;
+  top: 30%;
+}
+.delete_lecture_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.delete_lecture_btn button {
+  border: 2px solid #aaa;
+  padding: 10px;
+  width: 100px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+.delete_lecture_btn button:hover {
+  border: 2px solid #222;
+  font-weight: bold;
+}
+.add_lecture > svg {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  width: 60px;
+  padding: 1rem 0;
+}
+.url_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.subname_section {
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 2px dashed #aaa;
+}
+.subname_section:last-of-type {
+  border-bottom: none;
+}
+.subname_section > input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.add_lecture input,
+.url_container input {
+  width: 80%;
+  border: 2px solid #aaa;
+  outline: none;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.pdf_url,
+.video_url,
+.pdf_section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.pdfFiles_container {
+  width: 100%;
+}
+.url_container button {
+  padding: 0.5rem;
+  width: 60px;
+  border: 2px solid #aaa;
+  outline: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: 0.3s ease;
+  margin: 0 10px;
+}
+.url_container button:hover {
+  background-color: #aaa;
+}
+.video_url_input,
+.pdf_url_input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video_url_input button,
+.video_url_input .remove_btn,
+.pdfFiles_container > button {
+  width: 60px;
+  height: 60px;
+  font-size: 1rem;
+  border-radius: 16px;
+  border: 2px solid #000;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.video_url_input button:hover,
+.pdfFiles_container > button:hover {
+  background-color: black;
+  color: white;
+}
+.video_container,
+.pdf_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 300px;
+  overflow: auto;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.video_container button,
+.pdf_container button,
+.pdfFiles_array button {
+  width: 40px;
+  height: 40px;
+  font-size: 1rem;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+.add_lecture .add_btn,
+.add_lecture .add_subname {
+  width: 320px;
+  border: 2px solid #aaa;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 1rem;
+}
+.add_lecture .add_btn {
+  background-color: black;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px;
+  width: 150px;
+  transition: 0.3s ease;
+}
+.add_lecture .add_btn:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+@media screen and (max-width: 789px) {
+  .lectures_item {
+    width: 100%;
+  }
+}
