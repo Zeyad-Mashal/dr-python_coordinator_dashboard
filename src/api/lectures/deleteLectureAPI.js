@@ -1,4 +1,4 @@
-const URL = "https://back.dr-python.center/lecture/remove/";
+const URL = "https://dr-python-mvm9.onrender.com/lecture/remove/";
 const USER_TOKEN = localStorage.getItem("USER_TOKEN")
 const deleteLectureAPI = async (setError, setLoading, setAllLectures, subjectId, lectureId) => {
     setLoading(true)
